@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Testes - Exercícios 11 ao 20</h1>
+    <p>Clique para voltar aos <a href="index.html" rel="prev">exercíos 1 ao 10</a></p>
+    <h2>Imagem dinâmica</h2>
+    <p>Para diferentes tamanhos de tela, será mostrado diferentes imagens.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens/foto-grande.png" alt="Imagem com fundo verde e um G no meio">
+    </picture>
+    <h2>Audios</h2>
+    <h3>FOrmatos compatíveis</h3>
+    <ul>
+        <li>MP3</li>
+        <li>OGG</li>
+        <li>WAV</li>
+    </ul>
+    <audio preload="metadata" controls> <!--Outros parâmetros: autoplay loop-->
+        <source src="midia/guanacast-33.mp3">
+        <source src="midia/guanacast-33.ogg">
+        <source src="midia/guanacast-33.wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. Clique <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mp3">aqui</a> para fazer o download do arquivo MP3</p>
+    </audio>
+    <h2>Vídeos</h2>
+    <h3>Arquivos compatíveis</h3>
+    <ul>
+        <li>MP4</li>
+        <li>M4V</li>
+        <li>WEBM</li>
+        <li>OGV</li>
+    </ul>
+    <h3>Inserindo vídeos hospedados localmente</h3>
+    <video controls width="560px" poster="imagens/kombi.jpg">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <p>Infelizmente seu navegado não consegue reproduzi o vídeo</p>
+    </video>
+    <h3>Inserindo vídeos externos</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=X6KLcwInCutSQ-VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Testes - Exercícios 1 ao 10</h1>
+    <p>Clique aqui para avançar para os <a href="exs11-20.html" rel="next">exercícios 11 ao 20</a></p>
+    <h2>Simbolos especiais</h2>
+    <p>&#x1F62D; &euro; &yen; &real;</p>
+    <h2>Formatações</h2>
+    <h3>Negrito/Destaque</h3>
+    <p>Utilizando a tag &lt;b&gt;, temos <b>o negrito não semântico</b>, diferente da tag &lt;strong&gt;, que faz <strong>o negrito semantico</strong>.</p>
+    <h3>Itálico/Enfase</h3>
+    <p>Utilizando a tag &lt;i&gt;, temos o <i>itálico não semântico</i>, diferente da tag &lt;EM&gt;, que faz <EM>o itálico semântico</EM>.</p>
+    <h3>Texto marcado</h3>
+    <p>Para marcar um texto, posso usar <mark>a tag &lt;mark&gt;</mark>.</p>
+    <h3>Grande e Pequeno</h3>
+    <p>Usamos &lt;small&gt; para <small>textos pequenos</small> e &lt;big&gt;, apesar de ser um termo obsoleto, para <big>textos grandes</big>.</p>
+    <h3>Texto deletado e texto inserido</h3>
+    <p>Podemos marcar um texto com &lt;del&gt; como <del>texto deletado</del> para indicar que ele deve ser lido, porém não considerado.</p>
+    <p>Podemos marcar um texto com &lt;ins&gt; como <ins>texto inserido</ins> para dar ênfase e indicar que ele foi adicionado depois. Também a existe a tag &lt;u&gt; <u>para sublinhar</u>, porém não possui um valor semântico.</p>
+    <h3>Texto Subscrito e sobrescrito</h3>
+    <p>&lt;sub&gt; para H<sub>2</sub>O e &lt;sup&gt; para x<sup>2</sup>-2=0.</p>
+    <h3>Código fonte</h3>
+    <p>O código <code>documento.getElementById('teste')</code> é escrito em JavaScript</p>
+    <pre>
+        <code>
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número {num} é par')
+else:
+    print(f'O número {num} é impar')
+print('Fim do programa')
+        </code>
+    </pre>
+    <h3>Citações</h3>
+    <h4>Citações simples</h4>
+    <p>Como diria o pai do amigo do Gustavo Guanabara: <q>O computador é um burro muito rápido</q>.</p>
+    <h4>Citações completas</h4>
+    <p>Como diria o pai do amigo do Gustavo guarabara: </p>
+    <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+        O computador é um burro muito rápido
+    </blockquote>
+    <p>Como diria o pai do amigo do Gustavo guarabara: 
+        <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+            O computador é um burro muito rápido
+        </blockquote>
+    </p>
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h3>Texto invertido</h3>
+    <p>
+        <bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas placeat ad doloremque libero hic illo voluptates dolore molestiae obcaecati molestias, temporibus sunt suscipit, numquam quasi! Natus fugit cupiditate et?</bdo>
+    </p>
+    <h2>Listas</h2>
+    <h3>Listas ordenadas</h3>
+    <ol type="i" >
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <h3>Listas não ordenadas</h3>
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+    </ul>
+    <h3>Lista de definição</h3>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Definição</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de sites</dd>
+    </dl>
+    <h2>Links</h2>
+    <h3>Links externos</h3>
+    <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório Gustavo Guanabara</a>
+    <h3>Links internos</h3>
+    <a href="pag002.html" rel="next">Segunda página</a>
+    <a href="pag003/pag003.html">Terceira página</a>
+    <h3>Links para download</h3>
+    <ul>
+        <li><a href="pdfs/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="aplication/pdf">PDF da aula 10 raw</a></li>
+        <li><a href="pdfs/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="aplication/zip">PDF da aula 10 compactado em zip</a></li>
+    </ul>
+</body>
+</html>
